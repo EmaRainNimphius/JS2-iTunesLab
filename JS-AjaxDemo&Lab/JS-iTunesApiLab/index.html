@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax iTunes Lab</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="header">
+            <h1>Search by Artist's Name</h1>
+            <p>This will also display 10 songs by inputted artist :)</p>
+        </div>
+
+        <form>
+            <label for="artist">Artist's Name:</label>
+            <input type="text" id="artist" name="artist" placeholder="Jack Johnson">
+            <input class="button" type="button" value="Search" onclick="submitForm()">
+        </form>
+    </div>
+
+    <div id="artistName"></div>
+    <div id="artistAlbums"></div>
+</div>
+
+
+
+<!-- linking jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- linking personal ajax js file -->
+<script src="ajaxLab.js"></script>
+</body>
+</html>
